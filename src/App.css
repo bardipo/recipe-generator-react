@@ -191,25 +191,17 @@ a, a:visited, a:hover, a:active {
     width: 100%;
   }
   
-
-  @media (max-width: 1920px){
+  @media (max-width: 1024px){
     .card{
       width: 12vw;
       height: 12vw
     }
-  };
-
-  @media (max-width: 1680px){
-    .card{
-      width: 12vw;
-      height: 14vw
+    .card_content{
+      top: -62px;
+      padding: 9px
     }
-  };
-
-  @media (max-width: 1440px){
-    .card{
-      width: 12vw;
-      height: 17vw
+    .card_title{
+      font-size: 14px;
     }
   };
 
@@ -229,18 +221,33 @@ a, a:visited, a:hover, a:active {
       font-size: 14px;
     }
   };
-  
-  @media (max-width: 1024px){
+
+  @media (max-width: 1440px){
+    .card{
+      width: 12vw;
+      height: 17vw
+    }
+  };
+
+  @media (max-width: 1680px){
+    .card{
+      width: 12vw;
+      height: 14vw
+    }
+  };
+
+  @media (max-width: 1920px){
     .card{
       width: 12vw;
       height: 12vw
     }
-    .card_content{
-      top: -62px;
-      padding: 9px
-    }
-    .card_title{
-      font-size: 14px;
-    }
   };
+
+  
+
+  
+
+  
+  
+  
   
