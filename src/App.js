@@ -9,8 +9,7 @@ function App() {
   const appKey = '6d643e5441579bba8e39451a2ec34d79';
   const [foodQuery, setFoodQuery] = React.useState("");
   const [foodList, setFoodList] = React.useState([]);
-  const [isSubmit, setIsSubmit] = React.useState(false);
-
+  console.log(foodList);
   function handleChange(event){
       setFoodQuery(event.target.value);
       console.log(foodQuery);
@@ -33,7 +32,6 @@ function App() {
     .then(data => {
       console.log(data.hits);
       setFoodList(data.hits);
-      setIsSubmit(true);
     })
     .catch(error => console.error(error));
   }
@@ -42,7 +40,7 @@ function App() {
 
 
   return (
-    <div className={isSubmit ? "App cover" : "App full"}>
+    <div className={(foodList.length === 0) ? "App full" : "App cover"}>
         <Main
           setQuery= {handleChange}
           takeData= {handleClick}      
