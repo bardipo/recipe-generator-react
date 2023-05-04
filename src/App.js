@@ -9,8 +9,6 @@ function App() {
   const appKey = '6d643e5441579bba8e39451a2ec34d79';
   const [foodQuery, setFoodQuery] = React.useState("");
   const [foodList, setFoodList] = React.useState([]);
-  const [isSubmit, setIsSubmit] = React.useState(false);
-  const [tempFoodList, setTempFoodList] = React.useState([]);
 
   function handleChange(event){
       setFoodQuery(event.target.value);
