@@ -10,11 +10,13 @@ function App() {
   const [foodQuery, setFoodQuery] = React.useState("");
   const [foodList, setFoodList] = React.useState([]);
   const [isSubmit, setIsSubmit] = React.useState(false);
+  const [tempFoodList, setTempFoodList] = React.useState([]);
 
   function handleChange(event){
       setFoodQuery(event.target.value);
       console.log(foodQuery);
   }
+
   
   const printRecipes = foodList === [] ? "" : (foodList.slice(0,9)).map(item => {
     return <Recipe recipeName= {item.recipe.label} recipeImg= {item.recipe.image} recipeIngs= {item.recipe.ingredientLines} recipeLink= {item.recipe.shareAs} />
@@ -41,7 +43,7 @@ function App() {
 
 
   return (
-    <div className={`App ${isSubmit ? "cover" : "full"}`}>
+    <div className="App">
         <Main
           setQuery= {handleChange}
           takeData= {handleClick}      
