@@ -16,7 +16,7 @@ function App() {
   }
 
   
-  const printRecipes = foodList === [] ? "" : (foodList.slice(0,9)).map(item => {
+  const printRecipes = foodList === [] ? "" : (foodList.slice(0,8)).map(item => {
     return <Recipe recipeName= {item.recipe.label} recipeImg= {item.recipe.image} recipeIngs= {item.recipe.ingredientLines} recipeLink= {item.recipe.shareAs} />
   })
  
