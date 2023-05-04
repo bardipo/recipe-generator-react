@@ -23,7 +23,6 @@ function App() {
   
 
   function handleClick(event){
-    setIsSubmit(true)
     event.preventDefault();
 
     const endpointUrl = `https://api.edamam.com/search?q=${foodQuery}&app_id=${appId}&app_key=${appKey}`;
