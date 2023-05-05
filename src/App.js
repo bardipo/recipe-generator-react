@@ -40,7 +40,7 @@ function App() {
 
 
   return (
-    <div className={(foodList.length === 0) ? "App full" : "App cover"}>
+    <div className={(foodList.length < 7) ? "App full" : "App cover"}>
         <Main
           setQuery= {handleChange}
           takeData= {handleClick}      
