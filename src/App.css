@@ -253,32 +253,48 @@ a, a:visited, a:hover, a:active {
         flex-direction: column;
       }
       .card{
-        height: 25vw;
-        width: 25vw;
+        height: 50vw;
+        width: 50vw;
       }
       .container .main-text{
-        font-size: 6vw;
+        font-size: 15vw;
+        text-align: center;
       }
       .form .main-btn, .form .main-input {
-        height: 4vw;
+        height: 8vw;
       }
       .form .main-input{
-        font-size: 1.9vw;
+        font-size: 3.9vw;
+        width: 40vh;
       }
       .form .main-btn{
-        font-size: 1.8vw;
-        width: 17vw;
+        font-size: 3.8vw;
+        width: 35vw;
       }
       .card_title{
-        font-size: 2vw;
+        font-size: 4vw;
       }
       .card_content{
-        top: -20vw;
+        top: 1vw;
         padding: 0;
-        padding-left: 3vw;
+        padding-left: 4vw;
+        padding-top: 3vw;
       }
       .card_content::before{
         visibility: hidden;
+      }
+      .card:hover .card_content{
+        transform: translateY(150px);
+      }
+
+      .App{
+        width: 100%;
+        opacity: 0.85; 
+      }
+      .container{
+        padding: 25vw;
+        padding-bottom: 7vw;
+
       }
   }
   
