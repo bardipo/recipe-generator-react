@@ -248,3 +248,37 @@ a, a:visited, a:hover, a:active {
     }
   }
   
+  @media screen and (max-width: 480px){
+      .recipes{
+        flex-direction: column;
+      }
+      .card{
+        height: 25vw;
+        width: 25vw;
+      }
+      .container .main-text{
+        font-size: 6vw;
+      }
+      .form .main-btn, .form .main-input {
+        height: 4vw;
+      }
+      .form .main-input{
+        font-size: 1.9vw;
+      }
+      .form .main-btn{
+        font-size: 1.8vw;
+        width: 17vw;
+      }
+      .card_title{
+        font-size: 2vw;
+      }
+      .card_content{
+        top: -20vw;
+        padding: 0;
+        padding-left: 3vw;
+      }
+      .card_content::before{
+        visibility: hidden;
+      }
+  }
+  
